@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-    set<int> st;
+    set<int> st;          // 2 things about set : i) elements are sorted
+                          //                      ii) elements are unique
     st.insert(1);
     st.insert(13);
     st.insert(2);
@@ -29,7 +30,7 @@ int main()
     cout<<"afer deleting multiple elements: --> "<<endl;
     auto it1 = st.find(4);
     auto it2 = st.find(34);
-    st.erase(it1,it2);
+    st.erase(it1,it2);        // will delete elements from it1 to it2, excluding it2
 
     for(auto it : st)
         cout<<it<<" ";
